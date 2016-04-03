@@ -1,0 +1,12 @@
+block('slider')(
+    js()(true),
+    content()(function(){
+	 var ctx = this.ctx;
+        return [
+            { elem : 'inner', content : ctx.content },
+            { elem : 'control', elemMods: { slide: 'left' }, content: '‹' },
+			{ elem : 'control', elemMods: { slide: 'right' }, content: '›' },
+        ];
+    })
+);
+

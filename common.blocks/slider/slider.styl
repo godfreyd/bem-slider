@@ -1,0 +1,88 @@
+.slider {
+	width: 100%;
+	height: 100%;
+}
+
+.slider__inner {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.slider__item {
+	display: none;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.slider__item_state_active,
+.slider__item_state_next,
+.slider__item_state_prev {
+	display: block;
+}
+
+.slider__item_state_active {
+	left: 0;
+}
+
+.slider__item_state_next,
+.slider__item_state_prev {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.slider__item_state_next {
+	left: 100%;
+}
+.slider__item_state_prev {
+	left: -100%;
+}
+.slider__item_state_next.slider__control_slide_left,
+.slider__item_state_prev.slider__control_slide_right {
+	left: 0;
+}
+
+.slider__item_state_active.slider__control_slide_left {
+	left: -100%;
+}
+.slider__item_state_active.slider__control_slide_right {
+	left: 100%;
+}
+
+.slider__control {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	font-size: 60px;
+	font-weight: 100;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	color: #000;
+	text-align: center;
+	line-height: 30px;
+	background: #fff;
+	border-radius: 23px;
+	opacity: 0;
+}
+.slider__control_status_off {
+	opacity: 0;
+}
+.slider__control_status_on {
+	opacity: 0.5;
+}
+.slider__control_slide_right {
+  left: auto;
+  right: 15px;
+}
+
+.slider__control_slide_right:hover , .slider__control_slide_left:hover{
+  color: #000;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+
