@@ -19,7 +19,6 @@ module.exports = {
 
 						{
 							elem: 'item',
-							elemMods: { state: 'active' },
 							content: {
 								elem: 'img',
 								url: '../../img/1.jpg'
