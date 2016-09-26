@@ -20,4 +20,4 @@
 
 ## Результат
 
-Демо http://godfreyd.github.io/
+Демо http://godfreyd.github.io/slider/
